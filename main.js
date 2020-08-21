@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'やあ') {
-    msg.channel.send(`ぱおん`);
+    msg.channel.send(`やあ`);
   }
 });
 

@@ -6,9 +6,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-if (message.content.match(/m!/)) {
-        message.delete(100)
-    }
+
 
 client.on('message', async message =>{
 

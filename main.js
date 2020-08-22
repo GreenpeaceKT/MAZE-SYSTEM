@@ -13,7 +13,7 @@ client.on('message', async message =>{
     }
 
     if (message.content.match(/m!/)) {
-        message.delete(1)
+        message.delete(100)
     }
 
     if(message.content.indexOf(config.prefix) !== 0) return;

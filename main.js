@@ -6,15 +6,17 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+if (message.content.match(/m!/)) {
+        message.delete(100)
+    }
+
 client.on('message', async message =>{
 
     if(message.content === "こんにちは"){
         message.reply("こんにちは！")
     }
 
-    if (message.content.match(/m!/)) {
-        message.delete(100)
-    }
+    
 
     if(message.content.indexOf(config.prefix) !== 0) return;
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);

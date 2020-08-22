@@ -17,7 +17,7 @@ client.on('message', async message =>{
     const command = args.shift().toLowerCase();
 
 if(command === "say"){
-        message.delete().catch(msg=>{});
+        message.delete();
         const say_message = args.join(" ");
         message.channel.send(say_message);
     }

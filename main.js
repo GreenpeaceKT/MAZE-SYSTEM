@@ -17,6 +17,6 @@ if(command === "say"){
         message.delete().catch(msg=>{})
         message.channel.send(say_message);
     }
-
+}
 
 client.login(process.env.DISCORD_BOT_TOKEN);

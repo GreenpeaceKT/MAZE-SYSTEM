@@ -6,6 +6,10 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+client.on('message', message =>{
+    if(message.author.bot){
+        return;
+  }
 
 
 client.on('message', async message =>{

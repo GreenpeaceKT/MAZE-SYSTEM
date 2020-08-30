@@ -8,7 +8,7 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', member => {
-  console.log(`${member.guild.name} に ${member.displayName} が参加しました`);
+  client.channels.cache.get('749635026915950612').send('${member.guild.name} に ${member.displayName} が参加しました');
 });
 
 

@@ -7,6 +7,9 @@ client.on('ready', () => {
   client.channels.cache.get('749265842125930577').send('```MEIが起動しました!```');
 });
 
+client.on('guildMemberAdd', member => {
+  console.log(`${member.guild.name} に ${member.displayName} が参加しました`);
+});
 
 
 

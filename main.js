@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require('./config.json')
 
 client.on('ready', () => {
-  client.message.channels.get('749265842125930577').send('Botが起動しました');
+  client.message.channel　.get('749265842125930577').send('Botが起動しました');
   console.log(`Logged in as ${client.user.tag}!`);
 });
 

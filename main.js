@@ -4,7 +4,7 @@ const config = require('./config.json')
 
 client.on('ready', () => { 
   console.log(`Logged in as ${client.user.tag}!`);
-  client.message.channel.get('749265842125930577').send('Botが起動しました');
+  client.message.channels.get('749265842125930577').send('Botが起動しました');
 });
 
 

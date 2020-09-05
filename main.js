@@ -30,9 +30,6 @@ if(command === "say"){
         message.channel.send(say_message);
     }
 
-if(command === "ping"){
-        message.channel.send(bot.ping)
-    }
 
 })
 

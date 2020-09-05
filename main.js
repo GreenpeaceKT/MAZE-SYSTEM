@@ -33,7 +33,7 @@ if(command === "say"){
     }
 
 if(command === "ping"){
-        message.channel.send(bot.ping)
+        message.channel.send(client.ws.ping)
     }
 
 })

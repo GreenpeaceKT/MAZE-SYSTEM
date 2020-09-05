@@ -8,10 +8,11 @@ client.on('ready', () => {
   client.channels.cache.get('749265842125930577').send('```MEIが起動しました!```');
 });
 
-client.on('guildMemberAdd', member => {
-  client.channels.cache.get('749635026915950612').send(`age.guild.name}にmessage.guild.memberCount}が参加しました`);
+ent.on('guildMemberAdd', (member, guild) => {
+    const channel = member.guild.channels.cache.get("749635026915950612");
+    if (!channel) return;
+    channel.send(`**参加** ${member.user.tag}さんが参加しました！`);
 });
-
 
 
 client.on('message', async message =>{

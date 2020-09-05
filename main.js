@@ -18,9 +18,6 @@ client.on('message', async message =>{
     if(message.author.bot){
         return;
     }
-    if(command === "ping"){
-        message.channel.send(bot.ping)
-    }
     
 
     if(message.content.indexOf(config.prefix) !== 0) return;

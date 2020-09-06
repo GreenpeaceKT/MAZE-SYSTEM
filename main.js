@@ -1,15 +1,16 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
 const client = new Discord.Client();
-
+const MAZE = '731348290267906068'
+const MEMBERCOUNT = '752024389427396608'
 
 client.on('ready', () => { 
   console.log(`Logged in as ${client.user.tag}!`);
 
   client.channels.cache.get('749265842125930577').send('```MEIが起動しました!```');
 
-  const guild = client.guilds.cache.get(731348290267906068)
-   const channel = guild.channels.cache.get(752024389427396608)
+  const guild = client.guilds.cache.get(MAZE)
+   const channel = guild.channels.cache.get(MEMBERCOUNT)
    channel.setName('人数: ' + guild.memberCount)
  
 });
@@ -21,8 +22,8 @@ client.on('guildMemberAdd', (member, guild) => {
 });
 
 client.on('guildMemberAdd', member => {
-   if (member.guild.id === 731348290267906068) {
-     const channel = member.guild.channels.cache.get(752024389427396608)
+   if (member.guild.id === MAZE) {
+     const channel = member.guild.channels.cache.get(MEMBERCOUNT)
      channel.setName('人数: ' + member.guild.memberCount)
    }
  })

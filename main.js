@@ -5,7 +5,13 @@ const client = new Discord.Client();
 
 client.on('ready', () => { 
   console.log(`Logged in as ${client.user.tag}!`);
+
   client.channels.cache.get('749265842125930577').send('```MEIが起動しました!```');
+
+  const guild = client.guilds.cache.get(731348290267906068)
+   const channel = guild.channels.cache.get(752024389427396608)
+   channel.setName('人数: ' + guild.memberCount)
+ 
 });
 
 client.on('guildMemberAdd', (member, guild) => {
@@ -13,6 +19,13 @@ client.on('guildMemberAdd', (member, guild) => {
     if (!channel) return;
     channel.send(`**${member.user}さんが参加しました！**`);
 });
+
+client.on('guildMemberAdd', member => {
+   if (member.guild.id === 731348290267906068) {
+     const channel = member.guild.channels.cache.get(752024389427396608)
+     channel.setName('人数: ' + member.guild.memberCount)
+   }
+ })
 
 
 client.on('message', async message =>{

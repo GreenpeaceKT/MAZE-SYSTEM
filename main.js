@@ -11,7 +11,7 @@ client.on('ready', () => {
 client.on('guildMemberAdd', (member, guild) => {
     const channel = member.guild.channels.cache.get("749635026915950612");
     if (!channel) return;
-    channel.send(`@${member.user}**さんが参加しました！**`);
+    channel.send(`**${member.user}さんが参加しました！**`);
 });
 
 

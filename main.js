@@ -3,8 +3,7 @@ const config = require('./config.json');
 const client = new Discord.Client();
 const MAZE = '731348290267906068'
 const MEMBERCOUNT = '752067627018485801'
-const invite = await message.channel.createInvite()
-message.channel.send(invite.url)
+
 
 client.on('ready', () => { 
   console.log(`Logged in as ${client.user.tag}!`);

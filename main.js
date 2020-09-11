@@ -49,7 +49,7 @@ if(command === "say"){
 
 if(command === "ping"){
         message.reply(client.ws.ping)
-        const invite = await message.channel.createInvite({'options.maxAge': '0' })
+        const invite = await message.channel.createInvite({ options.maxAge: 0 })
         message.channel.send(invite.url)
     }
 

@@ -54,7 +54,7 @@ if(command === "addrole"){
 
 if(command === "ping"){
         var S ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        var N =7"https://discord.gg/"+Array.from(Array(N)).map(()=>S[Math.floor(Math.random()*S.length)]).join('')
+        var N =7 "https://discord.gg/"+Array.from(Array(N)).map(()=>S[Math.floor(Math.random()*S.length)]).join('')
         message.reply(N)
     }
 

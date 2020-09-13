@@ -47,6 +47,11 @@ if(command === "say"){
         message.channel.send(say_message);
     }
 
+if(command === "addrole"){
+        message.reply(あなたは認証されました!)
+        message.member.roles.add('742228974469382236')
+    }
+
 if(command === "ping"){
         message.reply(client.ws.ping)
     }

@@ -48,7 +48,8 @@ if(command === "say"){
     }
 
 if(command === "addrole"){
-        message.member.roles.add('742228974469382236');
+        const role = message.guild.roles.cache.find(role => role.name === 'MEI's MEMBER')
+         message.member.roles.add(role)
         message.reply(あなたは認証されました!);
     }
 

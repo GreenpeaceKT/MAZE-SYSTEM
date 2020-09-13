@@ -48,8 +48,8 @@ if(command === "say"){
     }
 
 if(command === "addrole"){
-        message.reply(あなたは認証されました!)
-        message.member.roles.add('742228974469382236')
+        message.member.roles.add('742228974469382236');
+        message.reply(あなたは認証されました!);
     }
 
 if(command === "ping"){

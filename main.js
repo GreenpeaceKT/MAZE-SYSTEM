@@ -57,6 +57,7 @@ if(command === "ban"){
         if(!member.bannable) return message.channel.send('このユーザーをBANすることができません')
         await member.ban()
         message.channel.send(`${member.user.tag}をBANしました`)
+    }
    
 
 })

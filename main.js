@@ -52,6 +52,12 @@ if(command === "addrole"){
         message.reply('あなたは認証されました!');
     }
 
+if(command === "ban"){
+        const member = message.mentions.members.first()
+        if(!member.bannable) return message.channel.send('このユーザーをBANすることができません')
+        await member.ban()
+        message.channel.send(`${member.user.tag}をBANしました`)
+   
 
 })
 

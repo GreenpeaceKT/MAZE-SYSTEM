@@ -53,6 +53,8 @@ if(command === "addrole"){
     }
 
 if(command === "ban"){
+        if (message.mentions.members.size !== 1)
+   	 return message.channel.send('BANするメンバーを1人指定してください')
         const member = message.mentions.members.first()
         if(!member.bannable) return message.channel.send('このユーザーをBANすることができません')
         await member.ban()

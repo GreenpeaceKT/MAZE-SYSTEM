@@ -69,7 +69,7 @@ if(command === "ban"){
         return message.reply('Couldn\' get a Discord user with this userID!');
     }
 
-    }
+    
    
 
 })

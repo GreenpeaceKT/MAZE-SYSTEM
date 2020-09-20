@@ -51,7 +51,7 @@ if(command === "addrole"){
         message.member.roles.add('742228974469382236');
         message.reply('あなたは認証されました!');
     }
-
+/*
 if(command === "ban"){
         const args = message.content.split('').slice(1);
         const user = message.mentions.users.first();
@@ -68,7 +68,7 @@ if(command === "ban"){
     }
     }
    
-   
+   */
 
 })
 

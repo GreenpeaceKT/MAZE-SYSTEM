@@ -53,16 +53,13 @@ if(command === "addrole"){
     }
 
 if(command === "ban"){
-        const args = message.content.split(' ').slice(1); // All arguments behind the command name with the prefix
-        const user = message.mentions.users.first(); // returns the user object if an user mention exists
-        const banReason = args.slice(1).join(' '); // Reason of the ban (Everything behind the mention)
+        const args = message.content.split(' ').slice(1);
+        const user = message.mentions.users.first();
+        const banReason = args.slice(1).join(' ');
 ​
-        // Check if an user mention exists in this message
         if (!user) {
         try {
-        // Check if a valid userID has been entered instead of a Discord user mention
         if (!message.guild.members.get(args.slice(0, 1).join(' '))) throw new Error('Couldn\' get a Discord user with this userID!');
-        // If the client (bot) can get a user with this userID, it overwrites the current user variable to the user object that the client fetched
         user = message.guild.members.get(args.slice(0, 1).join(' '));
         user = user.user;
         } catch (error) {

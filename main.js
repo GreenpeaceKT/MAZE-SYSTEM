@@ -63,9 +63,9 @@ if(command === "ban"){
         user = message.guild.members.get(args.slice(0, 1).join(' '));
         user = user.user;
         } catch (error) {
-        return message.reply('Couldn\' get a Discord user with this userID!');
+     */   return message.reply('Couldn\' get a Discord user with this userID!');
     }
-   */
+   
 
    
    

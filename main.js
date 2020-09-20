@@ -51,12 +51,12 @@ if(command === "addrole"){
         message.member.roles.add('742228974469382236');
         message.reply('あなたは認証されました!');
     }
-/*
+
 if(command === "ban"){
         const args = message.content.split(' ').slice(config.prefix.length).trim().split(/ +/g);
         const user = message.mentions.users.first();
         const banReason = args.slice(1).join(' ');
-​
+​/*
         if (!user) {
         try {
         if (!message.guild.members.get(args.slice(0, 1).join(' '))) throw new Error('Couldn\' get a Discord user with this userID!');

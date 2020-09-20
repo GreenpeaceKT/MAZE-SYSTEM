@@ -53,13 +53,13 @@ if(command === "addrole"){
     }
 
 if(command === "ban"){
-        const args = message.content.split('').slice(1);
+        const args = message.content.split().slice(1);
         const user = message.mentions.users.first();
-        const banReason = args.slice(1).join('');
+        const banReason = args.slice(1).join();
 ​/*
-        if (!user) {
+        if(!user) {
         try {
-        if (!message.guild.members.get(args.slice(0, 1).join(' '))) throw new Error('Couldn\' get a Discord user with this userID!');
+        if(!message.guild.members.get(args.slice(0, 1).join(' '))) throw new Error('Couldn\' get a Discord user with this userID!');
         user = message.guild.members.get(args.slice(0, 1).join(' '));
         user = user.user;
         } catch (error) {

@@ -58,11 +58,11 @@ if(command === "ban"){
         const banReason = args.slice(1).join('');
 ​
         if(!user) {
-        try { /*
+        try { 
         if(!message.guild.members.get(args.slice(0, 1).join(' '))) throw new Error('Couldn\' get a Discord user with this userID!');
         user = message.guild.members.get(args.slice(0, 1).join(' '));
         user = user.user;
-        } catch (error) {
+        } catch (error) /*{
         return message.reply('Couldn\' get a Discord user with this userID!');*/
     }
    

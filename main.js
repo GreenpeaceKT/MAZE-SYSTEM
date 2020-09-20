@@ -53,7 +53,7 @@ if(command === "addrole"){
     }
 
 if(command === "ban"){
-        const args = message.content.split(' ').slice(config.prefix.length);
+        const args = message.content.split(' ').slice(config.prefix.length).trim().split(/ +/g);
         const user = message.mentions.users.first();
         const banReason = args.slice(1).join(' ');
 ​

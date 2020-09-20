@@ -51,7 +51,7 @@ if(command === "addrole"){
         message.member.roles.add('742228974469382236');
         message.reply('あなたは認証されました!');
     }
-
+/*
 if(command === "ban"){
         const args = message.content.split(' ').slice(config.prefix.length).trim().split(/ +/g);
         const user = message.mentions.users.first();
@@ -65,7 +65,7 @@ if(command === "ban"){
         } catch (error) {
         return message.reply('Couldn\' get a Discord user with this userID!');
     }
-   }
+   */
 
    
    

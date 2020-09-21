@@ -53,16 +53,24 @@ if(command === "addrole"){
     }
 
 if(command === "ban"){
-        if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("Invalid Permissions");
-        let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
-        if (!User) return message.channel.send("Invalid User");
-        if (User.hasPermission("BAN_MEMBERS")) return message.reply("Invalid Permissions");
-        let banReason = args.join(" ").slice(22);
-        if (!banReason) {
-          banReason = "None"
-        }
+        const args = message.content.split(' ').slice(1);
 
-        User.ban({reason: banReason});
+const user = message.mentions.users.first();
+const banReason = args.slice(1).join(' ');
+if (!user) {
+  try {
+    if (!message.guild.members.get(args.slice(0, 1).join(' '))) throw new Error('Couldn\' get a Discord user with this userID!');
+    user = message.guild.members.get(args.slice(0, 1).join(' '));
+    user = user.user;
+  } catch (error) {
+    return message.reply('Could not get a Discord user with this userID!');
+  }
+}
+if (user === message.author) return message.channel.send('You can not ban yourself');
+if (!reason) return message.reply('You forgot to enter a reason for this ban!');
+if (!message.guild.member(user).bannable) return message.reply('You can not ban this user because you the bot has not sufficient permissions!');
+
+
 }
 
 });

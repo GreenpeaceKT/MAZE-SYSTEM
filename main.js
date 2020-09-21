@@ -63,6 +63,7 @@ if(command === "ban"){
         }
 
         User.ban({reason: banReason});
+}
 
 });
 

@@ -51,24 +51,19 @@ if(command === "addrole"){
         message.member.roles.add('742228974469382236');
         message.reply('あなたは認証されました!');
     }
-/*
+
 if(command === "ban"){
-        const args = message.content.split('').slice(1);
-        const user = message.mentions.users.first();
-        const banReason = args.slice(1).join('');
-​
-        if(!user) {
-        try { 
-        if(!message.guild.members.get(args.slice(0,1).join(''))) throw new Error('Could not get a Discord user with this userID!');
-        user = message.guild.members.get(args.slice(0,1).join(''));
-        user = user.user;
-        } catch (error) {
-        return message.reply('Could not get a Discord user with this userID!');
-    }
-    }
-    }
+        if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("Invalid Permissions")
+        let User = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
+        if (!User) return message.channel.send("Invalid User")
+        if (User.hasPermission("BAN_MEMBERS")) return message.reply("Invalid Permissions")
+        let banReason = args.join(" ").slice(22);
+        if (!banReason) {
+          banReason = "None"
+        }
+
+        User.ban({reason: banReason})
    
-   */
 
 })
 

@@ -62,9 +62,9 @@ if(command === "ban"){
           banReason = "None"
         }
 
-        User.ban({reason: banReason}
+        User.ban({reason: banReason})
    
-
+  )
 })
 
 

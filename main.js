@@ -23,8 +23,8 @@ client.on('guildMemberAdd', (member, guild) => {
 });
 
 client.on('guildMemberAdd', member => {
-   if (member.guild.id === MAZE) {
-     const channel = member.guild.channels.cache.get(MEMBERCOUNT)
+   if (member.guild.id === '731348290267906068') {
+     const channel = member.guild.channels.cache.get('752067627018485801')
      channel.setName('人数: ' + member.guild.memberCount)
    }
  })

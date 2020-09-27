@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const config = require('./config.json');
 const client = new Discord.Client();
-const MAZE = '731348290267906068'
-const MEMBERCOUNT = '752067627018485801'
 
 
 client.on('ready', () => { 

@@ -50,10 +50,7 @@ if(command === "addrole"){
         message.reply('あなたは認証されました!');
     }
 
-if(command === "ban"){
-        
-
-}
+});
 
 
 client.login(process.env.DISCORD_BOT_TOKEN);

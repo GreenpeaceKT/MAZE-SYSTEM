@@ -8,8 +8,8 @@ client.on('ready', () => {
 
   client.channels.cache.get('749265842125930577').send('```MEIが起動しました!```');
 
-  const guild = client.guilds.cache.get(MAZE)
-   const channel = guild.channels.cache.get(MEMBERCOUNT)
+  const guild = client.guilds.cache.get('731348290267906068')
+   const channel = guild.channels.cache.get('752067627018485801')
    channel.setName('人数: ' + guild.memberCount)
  
 });

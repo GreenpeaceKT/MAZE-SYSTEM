@@ -13,7 +13,7 @@ client.on('ready', () => {
    channel.setName('人数: ' + guild.memberCount)
 
   client.user.setActivity('ゲーム', {
-        type: 'PLAYING'})
+        type: 'STREAMING'})
 })
 
 client.on('guildMemberAdd', (member, guild) => {

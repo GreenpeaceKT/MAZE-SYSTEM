@@ -11,9 +11,9 @@ client.on('ready', () => {
   const guild = client.guilds.cache.get('731348290267906068')
    const channel = guild.channels.cache.get('752067627018485801')
    channel.setName('人数: ' + guild.memberCount)
-
+/*
   client.user.setActivity('ゲーム', {
-        type: 'PLAYING'
+        type: 'PLAYING'*/
 })
 
 client.on('guildMemberAdd', (member, guild) => {

@@ -14,7 +14,7 @@ client.on('ready', () => {
 
   client.user.setActivity('ゲーム', {
         type: 'PLAYING'
-});
+})
 
 client.on('guildMemberAdd', (member, guild) => {
     const channel = member.guild.channels.cache.get("749635026915950612");

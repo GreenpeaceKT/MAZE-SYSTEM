@@ -12,8 +12,8 @@ client.on('ready', () => {
    const channel = guild.channels.cache.get('752067627018485801')
    channel.setName('人数: ' + guild.memberCount)
 
-  client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'idle'
- 
+  client.user.setActivity('ゲーム', {
+        type: 'PLAYING'
 });
 
 client.on('guildMemberAdd', (member, guild) => {

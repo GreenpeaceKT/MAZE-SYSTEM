@@ -12,7 +12,7 @@ client.on('ready', () => {
    const channel = guild.channels.cache.get('752067627018485801')
    channel.setName('人数: ' + guild.memberCount)
 
-  client.user.setActivity('MEI’/s server', {
+  client.user.setActivity('MEI’s SERVER', {
         type: 'STREAMING'})
 })
 

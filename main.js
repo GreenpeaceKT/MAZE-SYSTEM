@@ -63,10 +63,10 @@ if(command === "ban"){
 }
 	  const member = await message.mentions.members.first().ban()
     message.channel.send("@${member.user.tag} をbanしました\n乙！！！！")
-  
+  (
 
 
-};
+});
 
 
 client.login(process.env.DISCORD_BOT_TOKEN);

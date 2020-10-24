@@ -53,18 +53,18 @@ if(command === "addrole"){
     }
 if(command === "ban"){
         if (message.content.startsWith('m!ban') && message.guild) {
-	  if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('権限ねぇよバーカ')
+	  if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("権限ねぇよバーカ")
    	if (message.mentions.members.size !== 1) {
 		const arg = message.content.split(" ")[1];
     const user = client.users.cache.get(arg);
     message.guild.members.ban(user);
 
-		message.channel.send('*${user}* **is** ***BANNED***')
+		message.channel.send("*${user}* **is** ***BANNED***")
 }
 	  const member = await message.mentions.members.first().ban()
-    message.channel.send('@${member.user.tag} をbanしました\n乙！！！！')
+    message.channel.send("@${member.user.tag} をbanしました\n乙！！！！")
   }
-
+)
 
 });
 

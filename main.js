@@ -50,7 +50,7 @@ if(command === "say"){
 if(command === "addrole"){
         message.member.roles.add('742228974469382236');
         message.reply('あなたは認証されました!');
-    }/*
+    }
 if(command === "ban"){
         if (message.content.startsWith('m!ban') && message.guild) {
 	  if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send("権限ねぇよバーカ")
@@ -63,10 +63,10 @@ if(command === "ban"){
 }
 	  const member = await message.mentions.members.first().ban()
     message.channel.send("@${member.user.tag} をbanしました\n乙！！！！")
-  
-*/
+ } 
 
-});
+
+}});
 
 
 client.login(process.env.DISCORD_BOT_TOKEN);

@@ -47,7 +47,7 @@ if(command === "say"){
         message.channel.send(say_message);
     }
 
-if(command === "addrole" && !message.member.roles.has('742228974469382236')){
+if(command === "addrole" && !message.member.roles.cache.has('742228974469382236')){
         message.member.roles.add('742228974469382236');
         message.reply('あなたは認証されました!');
     }

@@ -55,7 +55,7 @@ if(command === "addrole" && !message.member.roles.cache.has('742228974469382236'
 if(command === "rand"){
         const randoma = Math.floor( Math.random() * 5 )+ 1;
         const randomb = Math.floor( Math.random() * 8 )+ 1;
-        message.chanel.send(randoma","randomb);
+        message.chanel.send(randoma randomb);
     }
 
 

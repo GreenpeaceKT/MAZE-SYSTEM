@@ -55,7 +55,7 @@ if(command === "addrole" && !message.member.roles.cache.has('742228974469382236'
 if(command === "rand"){
         var randoma = Math.floor( Math.random() * 5 )+ 1;
         var randomb = Math.floor( Math.random() * 8 )+ 1;
-        message.reply(randoma'+'randomb)
+        message.reply(randoma + 'と' + randomb)
     }
 
 

@@ -52,6 +52,11 @@ if(command === "addrole" && !message.member.roles.cache.has('742228974469382236'
         message.reply('あなたは認証されました!');
     }
 
+if(command === "rand"){
+        var random1 = Math.floor( Math.random() * 5 )+ 1;
+        var random2 = Math.floor( Math.random() * 8 )+ 1;
+        message.chanel.send(random1,random2)
+    }
 
 
 });

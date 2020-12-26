@@ -53,9 +53,9 @@ if(command === "addrole" && !message.member.roles.cache.has('742228974469382236'
     }
 
 if(command === "rand"){
-        var randoma = Math.floor( Math.random() * 4 )+ 1;
-        var randomb = Math.floor( Math.random() * 7 )+ 1;
-        message.reply(randoma)+(randomb)
+        var randoma = Math.floor( Math.random() * 5 )+ 1;
+        var randomb = Math.floor( Math.random() * 8 )+ 1;
+        message.reply(randoma+randomb)
     }
 
 
